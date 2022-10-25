@@ -1,0 +1,125 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(golden\ chesse.otf);
+}
+
+
+body {
+  font-size: 1.2em;
+  font-family: myFirstFont;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  background-color: peachpuff;
+  align-items: center;
+}
+
+p,
+h1,
+h2 {
+  color: sienna;
+}
+
+h1 {
+  margin-block: 0.3vw;
+}
+
+h2 {
+  margin-bottom: 1vw;
+}
+
+#main_panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#control_panel {
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+  align-items: center;
+  border: 0.5vw solid sienna;
+  justify-content: space-around;
+  background-color: burlywood;
+  padding: 1vw 3vw;
+  border-radius: 2vw;
+  margin: 1vw;
+  font-family: myFirstFont;
+  font-weight: bold;
+}
+
+#control_panel h2 {
+  margin-top: 0.5vw;
+}
+
+#control_panel p {
+  margin-block-end: 0.2em;
+  margin-block-start: 0.2em;
+}
+
+#sketch_panel {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: azure;
+  min-width: 20em;
+  min-height: 20em;
+  margin: 1vw;
+  width: 35vw;
+  height: 35vw;
+  border-radius: 2vw;
+  border: 0.5vw solid sienna;
+}
+
+button {
+  background-color: sienna;
+  border: 0;
+  font-size: 1em;
+  margin: 0.2vw;
+  padding: 1vw;
+  border-radius: 1vw;
+  font-family: myFirstFont;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: peachpuff;
+}
+
+button:hover {
+  background-color: saddlebrown;
+}
+
+button#reset_button {
+  background-color: rgb(164, 42, 42);
+}
+
+button#reset_button:hover {
+  background-color: rgb(147, 20, 20);
+}
+
+.slider {
+  -webkit-appearance: none;
+  background-color: peachpuff;
+  border-radius: 1em;
+  margin-bottom: 1vw;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: sienna; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 1em;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: sienna; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 1em;
+}
